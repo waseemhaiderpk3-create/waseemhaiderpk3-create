@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waseem Haider — Frontend Developer</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Syne:wght@400;500;600;800&family=JetBrains+Mono:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- READING PROGRESS -->
+  <div id="pbar"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="ld-pct" id="ldPct">0%</div>
+    <div class="ld-track">
+      <div class="ld-bar"></div>
+    </div>
+    <div class="ld-lbl">Initializing</div>
+  </div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cur"></div>
+  <div class="cursor-ring" id="curR"></div>
+
+  <!-- ── NAV ────────────────────────────── -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">MR.ZERO<span class="logo-dot">.</span>DEV</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-s="about">About</a></li>
+      <li><a href="#skills" data-s="skills">Skills</a></li>
+      <li><a href="#projects" data-s="projects">Projects</a></li>
+      <li><a href="#process" data-s="process">Process</a></li>
+      <li><a href="#contact" data-s="contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── HERO ──────────────────────────── -->
+  <section id="hero">
+    <div class="orb o1" id="o1"></div>
+    <div class="orb o2" id="o2"></div>
+    <div class="orb o3" id="o3"></div>
+
+    <div class="hero-in">
+      <div class="h-badge">
+        <span class="badge-dot"></span>
+        Open to Opportunities
+      </div>
+
+      <h1 class="h-name">
+        <span class="h-grad" data-text="WASEEM HAIDER">WASEEM HAIDER</span>
+      </h1>
+
+      <div class="h-role">Frontend Developer</div>
+
+      <div class="h-typed">
+        <span style="color:var(--txtD)">&gt;&nbsp;</span>
+        I build&nbsp;<span class="t" id="tEl"></span><span class="caret"></span>
+      </div>
+
+      <div class="h-ctas">
+        <a href="#projects" class="btn btn-fill">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="sc-cue">
+      <div class="sc-line"></div>
+      <span class="sc-txt">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ──────────────────────────── -->
+  <section id="about">
+    <div class="wrap">
+      <div class="eyebrow fu">01 // About</div>
+      <h2 class="sec-h fu">Who I <em>Am</em></h2>
+
+      <div class="about-grid">
+        <div class="fl" style="transition-delay:.05s">
+          <div class="av-wrap">
+            <div class="av-ring av-r1">
+              <div class="av-dot av-dc"></div>
+              <div class="av-dot av-dp"></div>
+            </div>
+            <div class="av-ring av-r2">
+              <div class="av-dot av-dg"></div>
+            </div>
+            <div class="av-circle">
+              <span class="av-init"><img  src="assests/img/profile2.jpeg" alt="image of waseem haider | web developer"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text fr" style="transition-delay:.1s">
+          <p>
+            Hey! I'm <strong>Waseem Haider</strong> — a passionate <strong>Frontend Developer</strong>
+            from Pakistan, on a mission to craft pixel-perfect, high-performance web experiences
+            that users genuinely love.
+          </p>
+
+          <p>
+            I write clean, semantic, and maintainable code — turning complex UI challenges
+            into elegant, interactive solutions, one component at a time.
+          </p>
+
+          <div class="callout-block">
+            <p>"Currently building towards my own <strong>Portfolio Projects and future digital products</strong> — line by line, project by project."
+            </p>
+          </div>
+
+          <p>
+            When I'm not coding, I'm studying design systems, exploring browser APIs,
+            and turning ambitious ideas into polished digital products.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat">
+              <div class="stat-n">5+</div>
+              <div class="stat-l">Projects</div>
+            </div>
+            <div class="stat">
+              <div class="stat-n">3</div>
+              <div class="stat-l">Stacks</div>
+            </div>
+            <div class="stat">
+              <div class="stat-n">∞</div>
+              <div class="stat-l">Curiosity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ─────────────────────────── -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="eyebrow fu">02 // Skills</div>
+      <h2 class="sec-h fu">My <em>Toolkit</em></h2>
+
+      <div class="skills-grid">
+        <div class="sk-card fu">
+          <div class="sk-icon">🧱</div>
+          <div class="sk-name">Structure & Markup</div>
+          <div class="sk-tags">
+            <span class="sk-tag">HTML5</span>
+            <span class="sk-tag">Semantic HTML</span>
+            <span class="sk-tag">Accessibility</span>
+            <span class="sk-tag">SEO Basics</span>
+          </div>
+        </div>
+        <div class="sk-card fu" style="transition-delay:.08s">
+          <div class="sk-icon">🎨</div>
+          <div class="sk-name">Styling & Layout</div>
+          <div class="sk-tags">
+            <span class="sk-tag">CSS3</span>
+            <span class="sk-tag">Flexbox</span>
+            <span class="sk-tag">CSS Grid</span>
+            <span class="sk-tag">Animations</span>
+            <span class="sk-tag">Responsive</span>
+          </div>
+        </div>
+        <div class="sk-card fu" style="transition-delay:.16s">
+          <div class="sk-icon">⚡</div>
+          <div class="sk-name">Interactivity</div>
+          <div class="sk-tags">
+            <span class="sk-tag">JavaScript</span>
+            <span class="sk-tag">DOM API</span>
+            <span class="sk-tag">ES6+</span>
+            <span class="sk-tag">Fetch API</span>
+          </div>
+        </div>
+        <div class="sk-card fu" style="transition-delay:.24s">
+          <div class="sk-icon">🛠️</div>
+          <div class="sk-name">Tools & Workflow</div>
+          <div class="sk-tags">
+            <span class="sk-tag">Git & GitHub</span>
+            <span class="sk-tag">VS Code</span>
+            <span class="sk-tag">Figma</span>
+            <span class="sk-tag">DevTools</span>
+          </div>
+        </div>
+        <div class="sk-card fu" style="transition-delay:.32s">
+          <div class="sk-icon">📱</div>
+          <div class="sk-name">UI / UX Thinking</div>
+          <div class="sk-tags">
+            <span class="sk-tag">Mobile-First</span>
+            <span class="sk-tag">Wireframing</span>
+            <span class="sk-tag">Design Systems</span>
+            <span class="sk-tag">User Flow</span>
+          </div>
+        </div>
+        <div class="sk-card fu" style="transition-delay:.40s">
+          <div class="sk-icon">🚀</div>
+          <div class="sk-name">Currently Learning</div>
+          <div class="sk-tags">
+            <span class="sk-tag">React</span>
+            <span class="sk-tag">Node.js</span>
+            <span class="sk-tag">TypeScript</span>
+            <span class="sk-tag">Next.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ───────────────────────── -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="eyebrow fu">03 // Projects</div>
+      <h2 class="sec-h fu">Featured <em>Work</em></h2>
+
+      <div class="proj-grid">
+
+        <div class="pc fu">
+          <div class="pt">
+            <div class="ptb pt1">EC</div>
+            <div class="pt-ov">
+              <a href="#" class="pl">Live Demo</a>
+              <a href="#" class="pl g">Source</a>
+            </div>
+          </div>
+          <div class="pb">
+            <div class="pidx">// 001</div>
+            <div class="ptitle">E-Commerce Landing</div>
+            <p class="pdesc">A fully responsive product landing page with smooth cart animations, an interactive
+              gallery, and a mobile-optimised checkout flow.</p>
+            <div class="stack">
+              <span class="sp">HTML</span><span class="sp">CSS</span><span class="sp">JS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc fu" style="transition-delay:.1s">
+          <div class="pt">
+            <div class="ptb pt2">AD</div>
+            <div class="pt-ov">
+              <a href="#" class="pl">Live Demo</a>
+              <a href="#" class="pl g">Source</a>
+            </div>
+          </div>
+          <div class="pb">
+            <div class="pidx">// 002</div>
+            <div class="ptitle">Analytics Dashboard</div>
+            <p class="pdesc">Clean admin dashboard with dynamic charts, dark mode toggle, live KPI cards, and real-time
+              data simulation via JS.</p>
+            <div class="stack">
+              <span class="sp">HTML</span><span class="sp">CSS</span><span class="sp">JS</span><span
+                class="sp">Chart.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc fu" style="transition-delay:.2s">
+          <div class="pt">
+            <div class="ptb pt3">WA</div>
+            <div class="pt-ov">
+              <a href="#" class="pl">Live Demo</a>
+              <a href="#" class="pl g">Source</a>
+            </div>
+          </div>
+          <div class="pb">
+            <div class="pidx">// 003</div>
+            <div class="ptitle">Weather App UI</div>
+            <p class="pdesc">Beautiful weather interface with animated backgrounds that shift based on conditions, plus
+              location search and a 5-day forecast view.</p>
+            <div class="stack">
+              <span class="sp">HTML</span><span class="sp">CSS</span><span class="sp">JS</span><span class="sp">Open
+                API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pc fu" style="transition-delay:.3s">
+          <div class="pt">
+            <div class="ptb pt4">PF</div>
+            <div class="pt-ov">
+              <a href="#" class="pl">Live Demo</a>
+              <a href="#" class="pl g">Source</a>
+            </div>
+          </div>
+          <div class="pb">
+            <div class="pidx">// 004</div>
+            <div class="ptitle">Portfolio Template</div>
+            <p class="pdesc">Modern multi-section portfolio starter with animated transitions, scroll reveals, and a
+              contact form — fully ready to customise.</p>
+            <div class="stack">
+              <span class="sp">HTML</span><span class="sp">CSS</span><span class="sp">JS</span>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CALLOUT STRIP ──────────────────── -->
+  <div id="strip">
+    <p class="sq fu">"I don't just write code — I build <em>experiences</em> that feel fast, look beautiful, and convert
+      visitors into customers."</p>
+    <div class="ss fu" style="transition-delay:.14s">Waseem Haider &nbsp;·&nbsp; Frontend Developer &nbsp;·&nbsp;
+      Pakistan
+    </div>
+  </div>
+
+  <!-- ── PROCESS ────────────────────────── -->
+  <section id="process">
+    <div class="wrap">
+      <div class="eyebrow fu">04 // Process</div>
+      <h2 class="sec-h fu">How I <em>Work</em></h2>
+
+      <div class="proc-row">
+        <div class="step fu">
+          <div class="step-c">01</div>
+          <div class="step-t">Discover</div>
+          <p class="step-d">Understanding your goals, users, and constraints before a single line of code.</p>
+        </div>
+        <div class="step fu" style="transition-delay:.12s">
+          <div class="step-c">02</div>
+          <div class="step-t">Design</div>
+          <p class="step-d">Wireframes and visual direction aligned with your brand and target audience.</p>
+        </div>
+        <div class="step fu" style="transition-delay:.24s">
+          <div class="step-c">03</div>
+          <div class="step-t">Develop</div>
+          <p class="step-d">Clean, semantic, pixel-perfect code built for performance and long-term scale.</p>
+        </div>
+        <div class="step fu" style="transition-delay:.36s">
+          <div class="step-c">04</div>
+          <div class="step-t">Deploy</div>
+          <p class="step-d">Testing, optimisation, and launch — ready to impress users from day one.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ────────────────────────── -->
+  <section id="contact">
+    <div class="wrap" style="text-align:center">
+      <div class="eyebrow fu" style="justify-content:center">05 // Contact</div>
+      <h2 class="sec-h fu" style="text-align:center">Let's Build <em>Together</em></h2>
+      <p class="c-intro fu">
+        Have a project in mind? I'd love to hear about it.<br>
+        Send me a message — I'll respond within 24 hours.
+      </p>
+
+      <form class="cform fu" id="cform" style="text-align:left">
+        <div class="cform-row">
+          <div class="cg">
+            <label class="cl">Your Name</label>
+            <input type="text" class="ci" placeholder="e.g. Ahmad Khan" required>
+          </div>
+          <div class="cg">
+            <label class="cl">Email Address</label>
+            <input type="email" class="ci" placeholder="ahmad@example.com" required>
+          </div>
+        </div>
+        <div class="cg">
+          <label class="cl">Subject</label>
+          <input type="text" class="ci" placeholder="Project Inquiry / Collaboration">
+        </div>
+        <div class="cg">
+          <label class="cl">Message</label>
+          <textarea class="ca" placeholder="Tell me about your project, timeline, and budget…" required></textarea>
+        </div>
+        <button type="submit" class="csub" id="csbtn"><span>Send Message →</span></button>
+      </form>
+
+      <div class="socials fu">
+        <a href="#" class="soc">GitHub</a>
+        <a href="#" class="soc">LinkedIn</a>
+        <a href="#" class="soc">Twitter / X</a>
+        <a href="#" class="soc">WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────── -->
+  <footer>
+    <div class="fl">© 2025 <span>WASEEM HAIDER</span> — Built with HTML, CSS & JS</div>
+    <a href="#hero" class="ftop">↑ Top</a>
+  </footer>
+
+  <!-- ══════════════════════════════════════
+     JS
+══════════════════════════════════════ -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "JM6ccXUPUIDuawo_9", // Email.js ki Public Key
+      });
+   })();
+</script>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
