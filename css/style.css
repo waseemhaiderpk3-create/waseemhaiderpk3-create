@@ -221,6 +221,13 @@ nav.stuck {
 .logo-dot {
   color: var(--purple);
 }
+.nav-itmes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width:100%;
+
+}
 
 .nav-links {
   display: flex;
@@ -1528,10 +1535,21 @@ footer {
     padding: 16px 22px;
   }
 
-  .nav-links,
-  .nav-cta {
+  .nav-items {
     display: none;
   }
+  .show{
+    display:flex;
+    flex-direction: column;    
+  }
+   @keyframes showMenu{
+    0%{
+      transform: translateX(45px);
+    }
+    100%{
+      transform: translateX(-45px);
+    }
+   }
 
   .hamburger {
     display: flex;
@@ -1585,7 +1603,7 @@ footer {
   }
 }
 
-@media (max-width:328px){
+@media (max-width:390px){
   .cursor{
     display: none;
   }
